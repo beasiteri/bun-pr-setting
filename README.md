@@ -71,6 +71,26 @@ Install concurrently (root):
 bun add -d concurrently
 ```
 
+Create or update index.ts in the root:
+```bash
+import concurrently from 'concurrently';
+
+concurrently([
+  {
+    name: 'server',
+    command: 'bun run dev',
+    cwd: 'packages/server',
+    prefixColor: 'cyan',
+  },
+  {
+    name: 'client',
+    command: 'bun run dev',
+    cwd: 'packages/client',
+    prefixColor: 'green',
+  },
+]);
+```
+
 Add script in root package.json:
 ```bash
 "scripts": {
