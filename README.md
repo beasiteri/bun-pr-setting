@@ -167,12 +167,14 @@ bunx --bun shadcn@latest init
 ```
 
 **What This Does**
+
 - Creates a **components.json** file in the client folder
   - Tracks installed components
   - Managed internally by the CLI (do not modify manually)
 - Updates **index.css** with additional theme configuration
 
 **Installing Components**
+
 Browse available components at:
 https://ui.shadcn.com/docs/components
 
@@ -182,6 +184,7 @@ bunx --bun shadcn@latest add button
 ```
 
 **Usage**
+
 Import the component:
 ```bash
 import { Button } from './components/ui/button';
