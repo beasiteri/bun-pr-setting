@@ -236,17 +236,18 @@ bun run format
 ```
 
 ## Husky + lint-staged (Pre-commit formatting)
+Install and  initialize **Husky**:
 ```bash
 bun add -d husky lint-staged
 bunx husky init
 ```
 
-In .husky/pre-commit:
+In **.husky/pre-commit**:
 ```bash
 bunx lint-staged
 ```
 
-Create .lintstagedrc in root:
+Create **.lintstagedrc** in root:
 ```bash
 {
   "*.{js,jsx,ts,tsx,css}": "prettier --write"
