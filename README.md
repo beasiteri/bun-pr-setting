@@ -23,6 +23,8 @@ cd <project-name>
 bun init
 ```
 
+Select the **Blank** project template
+
 Enable workspaces in package.json:
 ```bash
 "workspaces": ["packages/*"]
